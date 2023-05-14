@@ -123,6 +123,7 @@
     <string name="icons_category_title">Icons</string>
     <string name="privacy_category_title">Privacy</string>
     <string name="spoof_category_title">Spoofing</string>
+    <string name="qs_panel_category">QS Panel</string>
     <string name="gestures_title">Gestures</string>
     <string name="caution">Caution</string>
     <string name="enable">Enable</string>
@@ -540,9 +541,10 @@
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
 
     <!-- QS tiles layout -->
+    <string name="qs_style_settings">QS panel styles</string>
+    <string name="qs_style_settings_summary">Customize panel style and animation</string>
     <string name="qs_tile_styles">QS tiles styles</string>
     <string name="qs_tile_layout_title">Tiles layout</string>
-    <string name="qs_tile_layout_summary">Customize tiles layout in QS panel</string>
     <string name="qs_tiles_layout_category">Tiles layout</string>
     <string name="qs_rows_portrait_title">Rows (Portrait)</string>
     <string name="qqs_rows_portrait_title">Rows (Quick QS portrait)</string>
