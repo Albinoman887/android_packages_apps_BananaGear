@@ -40,53 +40,74 @@
         android:summary="@string/monet_engine_summary"
         android:fragment="com.banana.settings.fragments.MonetEngine"/>
 
-    <!-- UI style -->
-    <Preference
-        android:key="android.theme.customization.style"
-        android:title="@string/theme_customization_ui_style_title"
-        android:summary="@string/theme_customization_ui_style_summary"
-        android:fragment="com.banana.settings.fragments.ui.UIStyles"/>
+   <!-- Styles Category -->
+    <PreferenceCategory
+        android:title="@string/theme_customization_ui_style_category">
 
-    <!-- Font style -->
-    <Preference
-        android:key="android.theme.customization.fonts"
-        android:title="@string/theme_customization_font_title"
-        android:summary="@string/theme_customization_font_summary"
-        android:fragment="com.banana.settings.fragments.ui.FontsPicker"/>
+        <!-- UI style -->
+        <Preference
+            android:key="android.theme.customization.style"
+            android:title="@string/theme_customization_ui_style_title"
+            android:summary="@string/theme_customization_ui_style_summary"
+            android:fragment="com.banana.settings.fragments.ui.UIStyles"/>
 
-    <!-- Icon pack -->
-    <Preference
-        android:key="android.theme.customization.icon_pack"
-        android:title="@string/theme_customization_icon_pack_title"
-        android:summary="@string/theme_customization_icon_pack_summary"
-        android:fragment="com.banana.settings.fragments.ui.StatusbarIcons"/>
+        <!-- Font style -->
+        <Preference
+            android:key="android.theme.customization.fonts"
+            android:title="@string/theme_customization_font_title"
+            android:summary="@string/theme_customization_font_summary"
+            android:fragment="com.banana.settings.fragments.ui.FontsPicker"/>
 
-    <!-- Signal icon style -->
-    <Preference
-        android:key="android.theme.customization.signal_icon"
-        android:title="@string/theme_customization_signal_icon_title"
-        android:summary="@string/theme_customization_signal_icon_summary"
-        android:fragment="com.banana.settings.fragments.ui.SignalIcons"/>
+        <!-- Navbar Style -->
+        <Preference
+            android:key="android.theme.customization.navbar"
+            android:title="@string/theme_customization_navbar_title"
+            android:summary="@string/theme_customization_navbar_summary"
+            android:fragment="com.banana.settings.fragments.ui.NavbarStyles"/>
 
-    <!-- Wifi icon style -->
-    <Preference
-        android:key="android.theme.customization.wifi_icon"
-        android:title="@string/theme_customization_wifi_icon_title"
-        android:summary="@string/theme_customization_wifi_icon_summary"
-        android:fragment="com.banana.settings.fragments.ui.WifiIcons"/>
+        <!-- Volume Panel Style -->
+        <com.banana.support.preferences.SystemSettingListPreference
+            android:key="custom_volume_styles"
+            android:title="@string/volume_style_title"
+            android:entries="@array/volume_styles_entries"
+            android:entryValues="@array/volume_styles_values"
+            android:summary="%s"
+            android:defaultValue="0" />
 
-    <!-- Adaptive icon pack -->
-    <Preference
-        android:key="android.theme.customization.adaptive_icon_shape"
-        android:title="@string/theme_customization_icon_shape_title"
-        android:summary="@string/theme_customization_icon_shape_summary"
-        android:fragment="com.banana.settings.fragments.ui.IconShapes"/>
+    </PreferenceCategory>
 
-    <!-- Navbar Style -->
-    <Preference
-        android:key="android.theme.customization.navbar"
-        android:title="@string/theme_customization_navbar_title"
-        android:summary="@string/theme_customization_navbar_summary"
-        android:fragment="com.banana.settings.fragments.ui.NavbarStyles"/>
+   <!-- Icons Category -->
+    <PreferenceCategory
+        android:title="@string/theme_customization_icons_category">
+
+        <!-- Icon pack -->
+        <Preference
+            android:key="android.theme.customization.icon_pack"
+            android:title="@string/theme_customization_icon_pack_title"
+            android:summary="@string/theme_customization_icon_pack_summary"
+            android:fragment="com.banana.settings.fragments.ui.StatusbarIcons"/>
+
+        <!-- Signal icon style -->
+        <Preference
+            android:key="android.theme.customization.signal_icon"
+            android:title="@string/theme_customization_signal_icon_title"
+            android:summary="@string/theme_customization_signal_icon_summary"
+            android:fragment="com.banana.settings.fragments.ui.SignalIcons"/>
+
+        <!-- Wifi icon style -->
+        <Preference
+            android:key="android.theme.customization.wifi_icon"
+            android:title="@string/theme_customization_wifi_icon_title"
+            android:summary="@string/theme_customization_wifi_icon_summary"
+            android:fragment="com.banana.settings.fragments.ui.WifiIcons"/>
+
+        <!-- Adaptive icon pack -->
+        <Preference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            android:title="@string/theme_customization_icon_shape_title"
+            android:summary="@string/theme_customization_icon_shape_summary"
+            android:fragment="com.banana.settings.fragments.ui.IconShapes"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

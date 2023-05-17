@@ -473,7 +473,7 @@
     <string name="powermenu_soundpanel">Sound Panel</string>
     <string name="powermenu_users">Users</string>
     <string name="powermenu_logout">Logout</string>
-    <string name="powermenu_emergency">Emergency</string>  
+    <string name="powermenu_emergency">Emergency</string>
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
@@ -931,7 +931,7 @@
 
     <!-- Alert Slider block -->
     <string name="block_alert_title">Block Alert slider</string>
-    <string name="block_alert_summary">Pocket mode will block the Alert slider</string> 
+    <string name="block_alert_summary">Pocket mode will block the Alert slider</string>
 
     <!-- Alert Slider Pulse (OnePlus devices) -->
     <string name="alert_slider_pulse_title">Alert slider pulse</string>
@@ -986,4 +986,8 @@
     <string name="gms_enabled_title">Google services</string>
     <string name="gms_enabled_summary">Control Google services and core apps</string>
     <string name="gms_enabled_footer">Before disabling Google services and core apps, you should disable "Find My Device" and 2-step verification on your Google account. It is strongly recommended to keep this setting enabled else apps dependent on Google components will be affected. If you run into any issues after changing this setting, perform a factory reset.</string>
+
+     <!-- Preference Catagories -->
+     <string name="theme_customization_ui_style_category">UI Elements</string>
+     <string name="theme_customization_icons_category">Icons</string>
 </resources>
